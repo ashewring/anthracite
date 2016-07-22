@@ -6,15 +6,15 @@ import merge from "lodash.merge";
 import assign from "lodash.assign";
 import capitalize from "lodash.capitalize";
 
-import db from "../../lib/firebase";
-import update from "../../lib/update";
-import watch from "../../lib/watch";
-import prefix from "../../lib/prefix";
+import db from "../../lib/firebase.js";
+import update from "../../lib/update.js";
+import watch from "../../lib/watch.js";
+import { prefix } from "../../lib/routes.js";
 
-import * as children from "../../types/children";
-import * as layout from "../layout/index";
-import * as nav from "./nav";
-import * as head from "./head";
+import * as children from "../../types/children.js";
+import * as layout from "../layout/index.js";
+import * as nav from "./nav.js";
+import * as head from "./head.js";
 
 import css from "./content-edit.css";
 

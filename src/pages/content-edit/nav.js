@@ -6,10 +6,10 @@ import fuzzy from "fuzzysearch";
 import debounce from "lodash.debounce";
 import slug from "sluggo";
 
-import config, { icons } from "../../config";
+import config, { icons } from "../../config.js";
 
-import db from "../../lib/firebase";
-import prefix from "../../lib/prefix";
+import db from "../../lib/firebase.js";
+import { prefix } from "../../lib/routes.js";
 
 import css from "./nav.css";
 
